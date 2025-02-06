@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Player Selection</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS */
+
+        /* Style for header */
+        header {
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+
+        /* Style for form inputs */
+        form input, form select, form textarea {
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        /* Inline style example */
+        h2 {
+            color: #343a40;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        /* Internal styling for lists */
+        ul li {
+            margin: 5px 0;
+        }
+
+        /* Example for ID selector */
+        #player {
+            background-color: #f8f9fa;
+        }
+
+        /* Example for class selector */
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Navigation bar hover effect */
+        .navbar-nav .nav-link:hover {
+            background-color: #007bff;
+            border-radius: 5px;
+        }
+
+        /* Footer styling */
+        footer {
+            background: linear-gradient(to right, #343a40, #555);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Player Selection</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#players">Players</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="text-center text-white py-5" style="background-image: url('images/header-bg.jpg'); background-size: cover;">
+        <h1 class="display-4">Football Player Selection</h1>
+        <p>Choose the best players for your team!</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container my-5">
+        <h2 class="text-center">About the Selection</h2>
+        <p>This is an intuitive platform where coaches can select players based on skills, stats, and performance data. Use the form below to customize your team!</p>
+    </section>
+
+    <!-- Players Section -->
+    <section id="players" class="container my-5">
+        <h2 class="text-center">Player List</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="ronaldo.webp" class="card-img-top" alt="Player 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Player 1</h5>
+                        <p class="card-text">Position: Forward | Age: 25</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="messi.webp" class="card-img-top" alt="Player 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Player 2</h5>
+                        <p class="card-text">Position: Midfielder | Age: 28</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="modric.webp" class="card-img-top" alt="Player 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Player 3</h5>
+                        <p class="card-text">Position: Defender | Age: 30</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form-section" class="container my-5">
+        <h2 class="text-center">Select Players</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="player">Select Player</label>
+                <select id="player" class="form-control">
+                    <option value="player1">Player 1</option>
+                    <option value="player2">Player 2</option>
+                    <option value="player3">Player 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comments">Comments</label>
+                <textarea id="comments" class="form-control" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2025 Football Player Selection | <a href="#" class="text-light">Privacy Policy</a></p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
